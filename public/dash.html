@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="dash.css">
+    <script>
+        let isAuthenticated = localStorage.getItem("isAuthenticated");
+        if (!isAuthenticated) {
+          window.location.href = "log.html";
+        }
+            </script>
 </head>
 <body>
     

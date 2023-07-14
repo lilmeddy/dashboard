@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up page</title>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth-compat.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <form action="" id="main">
+      <h3>Hey There</h3>
+      <p>Register</p>
+      <h4>Email</h4>
+        <input type="text" placeholder="agh@gmail.com" id="email">
+        <h4>Phone no</h4>
+        <input type="text" placeholder="09023334445" id="phone"> 
+        <h4>Password</h4>
+        <input type="password" placeholder="******" id="password">
+        </form>
+        <button onclick="sign(event)">Sign Up</button>
+        <button onclick="user()">Already a member? Login</button>
+    </main>
+</body>
+</html>
+<script>
+    const firebaseConfig = {
+    apiKey: "AIzaSyCsXIfDqcf9NLzlwgb23JU_6mWeJ0wvqKQ",
+    authDomain: "my-app-6ce86.firebaseapp.com",
+    projectId: "my-app-6ce86",
+    storageBucket: "my-app-6ce86.appspot.com",
+    messagingSenderId: "241382599602",
+    appId: "1:241382599602:web:df712c6c761ffe12c312ab"
+  };
+  const app = firebase.initializeApp(firebaseConfig);
+</script>
+<script src="index.js"></script>
+
