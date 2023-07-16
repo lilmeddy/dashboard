@@ -12,12 +12,17 @@ function sign(ev){
   .then((userCredential) => {
     // Signed in
     var user = userCredential.user;
-    alert("success")
+    // alert("logi")
+    authenticate()
+
     // ...
   })
   .catch((error) => {
     var errorCode = error.code;
     var errorMessage = error.message;
-    alert("invalid")
+    alert(errorMessage)
   });
     }
+function user(){
+  window.location.href ="index.html"
+}
